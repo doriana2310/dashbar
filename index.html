@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html> 
+    <head> 
+        <title> DashBar </title>
+        <link href="https://fonts.googleapis.com/css?family=Cabin|Italianno|Handlee" rel="stylesheet">
+
+        <style> 
+            body{
+                background-color: black;
+                overflow-x: hidden;
+                padding: 0;
+                margin: 0;
+
+            } 
+            #menu{
+                width: 100%;
+                height: 50px;
+                background-color: rgba(255,255,255,0.05);
+            }
+            .menuitem{
+                display: inline-block;
+                margin:15px 20px;
+                font-family: cabin;
+                color: #F3C331;
+                letter-spacing: 1px;
+                cursor: pointer;
+                font-size: 2vh;;
+                text-decoration: none;
+
+            }
+            .menuitem:hover{
+                color: white;
+            }
+            #portada{
+                width: 100%; 
+                height: 100vw;
+                max-height: 100vh;
+                position: relative;
+            }
+            #imgprincipal{
+                width: 100%; 
+                height: 100%;
+            }
+            #barnombre{
+                color: white;
+                font-size:150px;
+                position: absolute;
+                top: 10vh;
+                width: 100%;
+                text-align: center;
+                font-family: "Italianno";
+            }
+            #titulo2{
+                color: rgba(255, 255, 255, 0.6);
+                font-size:50px;
+                position: absolute;
+                top: 40vh;
+                width: 100%;
+                text-align: center;
+                font-family: "Cabin";
+            }
+            #redessociales{
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                display: inline-block;
+            }
+            .icono{
+                width: 40px;
+                display: inline-block;
+                cursor: pointer;
+            }
+            #pag1{
+                text-align: center;
+            }
+            .subtitulo1{
+                color: #F3C331;
+                font-size: 40px;
+                width: 100%;
+                text-align: center;
+                margin: 60px 0px;
+                font-family: 'Handlee';
+            }
+            #logo{
+                width:30%;
+                margin: 0 0 60px 0;
+
+            }
+            #texto{
+                font-size: 24px;
+                margin: 20px;
+                color: rgba(255,255,255,0.5);
+                font-family: "cabin";
+            }
+            .serviciotex{
+                display: inline-block;
+                color:rgba(255,255,255,0.5);
+                font-family: "cabin";
+                width: 60%;
+                vertical-align: top;
+                padding: 60px;
+                font-size: 18px;
+                text-align: center;
+
+            }
+            .servicioimg{
+                width: 30%;
+                display: inline-block;
+
+            }
+            .servicio{
+                text-align: center;
+            }
+
+            @media only screen and (max-width: 1200px) {
+                .servicio {
+                    margin-bottom: 50px;
+                }
+            }
+            .columna1{
+                color: rgba(255,255,255,0.5);
+                width:40%;
+                display: inline-block;
+                vertical-align: top;
+                padding: 0px 0px 0px 100px;
+                text-align: left;
+                font-size: 20px;
+                font-family: cabin;
+
+
+            }
+        </style>
+
+    </head>
+    <body>
+
+        <div id="menu">
+            <a class="menuitem" href="#pag1" >
+                SOBRE NOSOTROS
+            </a> 
+            <a class="menuitem"  href="#pag2" >
+                SERVICIOS
+            </a> 
+            <a class="menuitem" href="#pag3">
+                CÓCTELES
+            </a> 
+
+        </div>
+
+
+        <div id="portada">
+            <img id="imgprincipal" src='img/image.png'/>
+            <div id="barnombre"> Dash Bar</div>
+            <div id="titulo2"> ¡DÉJATE SORPRENDER POR EL <br> MEJOR SERVICIO DE BARRA!</div>
+            <div id='redessociales'>
+                <a href="https://api.whatsapp.com/send?phone=584141114971" target="_blank"><img class="icono" src="img/image 2.png"/></a>
+                <a href="https://www.instagram.com/dashbar18" target="_blank"><img class="icono" src="img/image%203.png"/></a>
+                <a href="mailto:dashbar2018@gmail.com"><img class="icono" src="img/image%204.png"/></a>
+            </div>
+        </div>
+
+        <div id="pag1">
+            <div class="subtitulo1"> SOBRE NOSOTROS</div>
+            <img id="logo" src="img/fotobar%20(copy).png"/>
+            <div id="texto"> Dash Bar, esta dedicada por lo general a un servicio integral para eventos y fiestas. Innovamos constantemente para brindarle una experiencia unica en el mundo de la cocteleria.<br> <br>
+
+                Trabajamos para eventos de particulares y empresas poniendo a su disposición la mejor selección y calidad en bebidas y cócteles. <br>  <br> 
+
+                Elaboramos los cócteles con los ingredientes más frescos y las mejores marcas de bebidas nacional e importada del mercado. Para lograrlo tenemos profesionales que se encargaran de hacer, con la técnica que merece su evento.
+            </div>
+        </div>
+        <div id="pag2">
+            <div class="subtitulo1"> NUESTROS SERVICIOS</div>
+            <div class="servicio">
+                <div class="serviciotex">
+                    <div style="font-size: 52px;font-family: Italianno; color: white;text-align: center" > Barra sin Alcohol</div>
+                    <br>
+                    Te ofrecemos una barra sin alcohol, integrados por jugos, combinación de frutas y varios insumos. Divertidos tragos sin alcohol, sin duda alguna ricos, dulces y nutritivas para los más chicos. Pensada de la misma manera para eventos deportivos, empresariales o simplemente los que busquen una propuesta sana.
+                </div>
+                <img class="servicioimg"  src="img/servicio1.png"/>
+            </div>
+            <div class="servicio">
+                <img class="servicioimg"  src="img/servicio2.png"/><div class="serviciotex">
+                <div style="font-size: 52px;font-family: Italianno; color: white;text-align: center" > Fiestas / Enventos</div>
+                <br>
+                Te ofrecemos una barra sin alcohol, integrados por jugos, combinación de frutas y varios insumos. Divertidos tragos sin alcohol, sin duda alguna ricos, dulces y nutritivas para los más chicos. Pensada de la misma manera para eventos deportivos, empresariales o simplemente los que busquen una propuesta sana.
+                </div>
+
+            </div>
+        </div>
+
+        <div id="pag3" style="text-align: center">
+            <div class="subtitulo1"> CARTA DE CÓCTELES</div>
+            <div style=" font-size: 90px; font-family: italianno; color: white; text-align: left; margin-left: 100px">Con Alcohol</div><br> <br> 
+            <div class="columna1">
+
+
+                Piña Colada <br>
+                (Ron blanco, piña, crema de coco) <br> <br>
+
+                Daiquiri Frozen <br>
+                (Ron,frutas,jarabe de goma) <br> <br>
+
+                Mojito Cubano: Tradicional, fresa y parchita. <br>
+                (Hierba buena, ron, refresco)<br> <br>
+
+                Sex on the beach <br>
+                (Vodka, licor de melocotón, zumo de arándanos) <br> <br>
+
+                Margarita blues <br>
+                (Tequila, limón, curacao azul) <br> <br>
+            </div>
+            <div class="columna1">
+                Gin fizz <br>
+                (Ginebra, limón, jarabe de goma)<br> <br>
+
+                Tequila sunrise <br> 
+                (Tequila, naranja, granadina)<br> <br> 
+
+                Gin suntise<br> 
+                (Ginebra, naranja, granadina)<br> <br>
+
+                Jello Shot  <br> <br>
+
+
+            </div><br>
+            <img src="img/coctel1.png" style="width: 30%"/>
+        </div>
+
+
+
+        <div id="pag4" style="position: relative; margin-top: 100px" >
+
+            <div style=" font-size: 90px; font-family: italianno; color: white; text-align: left; margin-left: 100px">Sin Alcohol</div><br> <br> 
+            <div class="columna1">
+
+
+                Frozen <br>
+                (Frutas, hielo, azúcar) <br> <br>
+                Fruit punch <br>
+                (Zumo de distintas frutas, hielo, azúcar) <br> <br>
+
+                Piña colada Virgen <br> <br>
+
+                Mojito sin alcohol <br> <br>
+
+                Jello Shot  <br> <br>
+
+
+
+
+                <br> <br>
+            </div>
+
+            <img src="img/coctel2.png" style="width: 30%; position: absolute; top: 50px; right: 150px "/>
+        </div>
+
+
+    </body>
+
+
+
+</html>
